@@ -11,6 +11,14 @@ html,body,ul,li,a,span,input,img{
     vertical-align: middle;
 }
 
+a:link,
+a:visited,
+a:hover {
+    color: #000;
+}
+
+
+
 html,body {
     width: 100%;
     height: 100%;
@@ -41,14 +49,15 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.top,.main,.main_carousel,.main_carousel_nav,.main_nav,.top_nav_open {
+.w-p100 {
     width: 100%;
 }
 
-.top-content,.main_carousel--content,.main_nav--content,.main_carousel_card {
+.w-1120 {
     margin: 0 auto;
     width: 1120px;
 }
+
 
 .top,.top-content {
     position: relative;
@@ -64,6 +73,8 @@ body {
     display: block;
     float: left;
 }
+
+/* ----- *//* ----- *//* ----- *//* ----- *//* ----- */
 
 .top_logo,
 .top_logo a img {
@@ -82,6 +93,8 @@ body {
     height: 36px;
 }
 
+/* ----- *//* ----- *//* ----- *//* ----- *//* ----- */
+
 .top_nav {
     margin: 0 145px;
     width: 610px;
@@ -95,6 +108,8 @@ body {
     cursor: pointer;
     float: left;
 }
+
+/* ----- *//* ----- *//* ----- *//* ----- *//* ----- */
 
 .top_right {
     width: 110px;
@@ -132,93 +147,46 @@ body {
     z-index: 5;
 }
 
+/* ----- *//* ----- *//* ----- *//* ----- *//* ----- */
+
 .main {
     margin: 0 auto;
-    background: #fafafa;
+    background: #f4f4f4;
     overflow: hidden;
 }
 
 .main_carousel {
     position: relative;
     margin: 0 auto 150px;
+    height: 325px;
 }
-
-.main_carousel--content,
-.main_carousel_nav {
-    position: relative;
+.main_carousel-button,
+.main_carousel-nav,
+.main_carousel-card {
+    position: absolute;
     height: 325px;
 }
 
-.main_carousel_nav {
+.carousel-nav_item {
     position: absolute;
 }
 
-.carousel_nav_item {
-    position: absolute;
-}
-
-.carousel_nav_item a img {
+.carousel-nav_item a img {
     width: 100%;
     height: 100%;
 }
 
-.carousel_back,
-.carousel_next {
-    position: absolute;
-    top: calc(50% - 20px);
-    display: none;
-    width: 36px;
-    height: 36px;
-    background: #fff;
-    line-height: 36px;
-    border-radius: 50%;
-    transform: translateY(-50%);
-    cursor: pointer; 
-    z-index: 5;
-}
+/* ----- *//* ----- *//* ----- *//* ----- *//* ----- */
 
-.carousel_back {
-    left: 0px;
-}
-.carousel_next {
-    right: 0px;
-}
-
-.main_carousel_nav:hover .back-next {
-    display: block;
-}
-
-.carousel_back-next {
-    position: absolute;
-    bottom: 60px;
+.main_carousel-card {
+    top: 280px;
     left: 50%;
-    width:  90px;
-    height: 10px;
-    transform: translateX(-50%);
-    z-index: 5;
-}
-
-.back-next_item {
-    margin: 0 15px 0 0;
-    width: 10px;
-    height: 10px;
-    background: #fff;
-    border-radius: 50%;
-    float: left;
-}
-
-.back-next_item:nth-last-child(1) {
-    margin-right: 0;
-}
-
-.main_carousel_card {
-    position: absolute;
-    top: 285px;
     height: 164px;
-    overflow: hidden;
+    transform: translateX(-50%);
+    z-index: 3;
 }
 
-.carousel_card_item {
+.carousel-card_item {
     margin-right: 20px;
     width: 265px;
     height: 144px;
@@ -229,19 +197,85 @@ body {
     float: left;
 }
 
-.carousel_card_item:nth-last-child(1) {
+.carousel-card_item:nth-last-child(1) {
     margin-right: 0;
 }
 
-.carousel_card_item a img {
+.carousel-card_item a img {
     width: 100%;
     height: 100%;
     transition: .5s;
 }
 
-.carousel_card_item:hover a img {
+.carousel-card_item:hover a img {
     transform: scale(1.1);
 }
+
+
+/* ----- *//* ----- *//* ----- *//* ----- *//* ----- */
+
+.main_carousel-button {
+    cursor: pointer;
+}
+
+.carousel-button {
+    position: relative;
+    height: 280px;
+}
+
+.carousel_back,
+.carousel_next {
+    position: absolute;
+    top: 50%;    
+    display: none;
+    width: 36px;
+    height: 36px;
+    background:#fff;
+    border-radius: 50%;
+    line-height: 36px;
+    transform: translateY(-50%);
+    cursor: pointer; 
+    z-index: 10;
+}
+
+.carousel_back {
+    left: 0;
+}
+
+.carousel_next {
+    right: 0;
+}
+
+.main_carousel-button:hover .carousel-button .back-next {
+    display: block;
+}
+
+.back-next:hover {
+    border: 1px solid #ddd;
+    background: #ff6a00;
+}
+
+.carousel_choice {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width:  90px;
+    height: 10px;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.choice_item {
+    margin: 0 10px 0 0;
+    border: 1px solid #ccc;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    float: left;
+}
+
+/* ----- *//* ----- *//* ----- *//* ----- *//* ----- */
 
 .main_nav--content {
     height: 50px;
@@ -263,16 +297,123 @@ body {
     color: #ff0a66;
 }
 
+/* ----- *//* ----- *//* ----- *//* ----- *//* ----- */
 
 .main_content {
     position: relative;
     left: calc((100% - 1120px) / 2) ;
     width: 848px;
     margin: 10px 20px 10px 0;
-    height: 1000px;
-    background: #ddd;
+    min-height: 1000px;
     float: left;
 }
+
+.content-card_item {
+    margin-bottom: 20px;
+    width: 810px;
+    background: red;
+    overflow: hidden;
+}
+
+.content-card_left,
+.content-card_right {
+    position: relative;
+    width: 400px;
+    background: #fff;
+    float: left;
+}
+
+.content-card_right {
+    min-height: 200px;
+    float: right;
+}
+
+.content-card_left {
+    height: 100%;
+}
+
+.content-card_left img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("https://dummyimage.com/400x200");
+    overflow: hidden;
+}
+
+.content-card_right h2 {
+    padding: 0 30px;
+    font-size: .2rem;
+}
+
+.content-card_right-main{
+    margin-bottom: 64px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.content-card_right-footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 10px;
+}
+
+.content-card_right-footer span {
+    display: inline-block;
+    padding: 0 5px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.ccrf_left,
+.ccrf_right  {
+    margin: 20px auto;
+    height: 24px;
+    float: left;
+}
+
+.ccrf_right {
+    float: right;
+}
+
+
+
+.user-avatar,
+.user-name,
+.release-time,
+.electric,
+.comment {
+    display: inline-block;
+    height: 24px;
+}
+
+.user-avatar {
+    margin: 0 0 0 20px;
+    width: 24px;
+    border-radius: 50%;
+    background:#aaa;
+}
+
+.comment {
+    margin: 0 20px 0 0;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.electric>.icon::before {
+    content: "\e600";
+    text-align: left;
+}
+
+.comment>.icon::before {
+    content: "\e625";
+    text-align: left;
+}
+
+/* ----- *//* ----- *//* ----- *//* ----- *//* ----- */
 
 .main_right {
     position: relative;
@@ -296,6 +437,7 @@ body {
     right: 30px;
     width: 42px;
     height: 112px;
+    z-index: 10;
 }
 
 .fixed-box_reg-login,
