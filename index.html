@@ -12,35 +12,100 @@
 
 <body>
     <header class="top w-p100">
-        <div class="top_nav_open w-p100"></div>
         <div class="top-content w-1120">
             <div class="top_logo">
                 <a href="#">
                      <img src="./img/icon/logo.png" alt="">
                 </a>
             </div>
-            <nav class="top_nav">
+            <nav class="top_nav iconfont">
                 <div class="top_nav_item">
-                    <span>Matrix</span>
+                    <a href="#">
+                        <span class="icon">&#xe60d;</span>
+                        <span>Matrix 社区</span>
+                    </a>
                 </div>
                 <div class="top_nav_item">
-                    <span>付费订阅</span>
+                    <a href="#">
+                        <span class="icon">&#xe623;</span>
+                        <span>付费订阅</span>
+                    </a>
                 </div>
                 <div class="top_nav_item">
-                    <span>特别策划</span>
+                    <a href="#">
+                        <span class="icon">&#xe624;</span>
+                        <span>特别策划</span>
+                        <div class="top_nav_open w-p100">
+                            <div class="tno_item">
+                                <a href="#">
+                                    <span class="icon">&#xe630;</span>
+                                    <span>专题精选</span>
+                                </a>
+                            </div>
+                            <i class="split-line"></i>
+                            <div class="tno_item">
+                                <a href="#">
+                                    <img src="./img/top/nomo_white.9711098f.svg" alt="">
+                                </a>
+                            </div>
+                            <i class="split-line"></i>
+                            <div class="tno_item">
+                                <a href="">
+                                    <img src="./img/top/shortcut_gallery_white.65c1a44f.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="top_nav_item">
-                    <span>Pi Store</span>
+                    <a href="#">
+                        <span class="icon">&#xe611;</span>
+                        <span>Pi Store</span>
+                        <div class="top_nav_open w-p100">
+                            <div class="tno_item">
+                                <a href="#">
+                                    <span class="icon">&#xe62d;</span>
+                                    <span>正版软件</span>
+                                </a>
+                            </div>
+                            <i class="split-line"></i>
+                            <div class="tno_item">
+                                <a href="#">
+                                    <span class="icon">&#xe62e;</span>
+                                    <span>官方淘宝</span>
+                                </a>
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 <div class="top_nav_item">
-                    <span>Tron 计划</span>
+                    <a href="#">
+                        <span class="icon">&#xe60f;</span>
+                        <span>Tron 计划</span>
+                    </a>
                 </div>
             </nav>
             <div class="top_right">
                 <div class="top_right_search iconfont">
-                    &#xe61e;
+                    <span class="open-close">&#xe61e;</span>
+                    <div class="top_search-box">
+                        <div class="top_search-box_content">
+                            <input type="text" class="tsbc_search-input" placeholder=" 热门搜索" />
+                            <div class="top_search-keyword">
+                                <div class="label-first">热门搜索</div>
+                                <div class="item">开发者</div>
+                                <div class="item">APP推荐</div>
+                                <div class="item">限免冰点</div>
+                                <div class="item">新游派</div>
+                                <div class="item">福利派</div>
+                                <div class="item">VSCO</div>
+                                <div class="item">游戏</div>
+                                <div class="label-last">换一组</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="top_right_reg-login">
+                <div id="topopen" class="top_right_reg-login">
                     登录
                 </div>
             </div>
@@ -109,14 +174,9 @@
                     <div class="content-card_right">
                         <div class="content-card_right-main">
                             <h2 class="title">一次编程马拉松的经历，让我的 Airtable 账户上多了五千美金</h2>
-                            <p>sfsfffff</p>
-                            <p>sfsfffff</p>
-                            <p>sfsfffff</p>
-                            <p>sfsfffff</p>
-                            <p>sfsfffff</p>
-                            <p>sfsfffff</p>
-                            <p>sfsfffff</p>
-                            <p>sfsfffff</p>
+                            <p>一次编程马拉松的经历，让我的 Airtable 账户上多了五千美金</p>
+                            <p>一次编程马拉松的经历，让我的 Airtable 账户上多了五千美金</p> 
+                            <p>一次编程马拉松的经历，让我的 Airtable 账户上多了五千美金</p> 
                         </div>
                         <div class="content-card_right-footer">
                             <div class="ccrf_left">
@@ -149,15 +209,31 @@
                     <div class="content-card_left"><img src="" alt=""></div>
                     <div class="content-card_right">
                         <div class="content-card_right-main">
-                            <h2 class="title"></h2><p></p>
+                            <h2 class="title">一次编程马拉松的经历，让我的 Airtable 账户上多了五千美金</h2>
+                            <p>一次编程马拉松的经历，让我的 Airtable 账户上多了五千美金</p>
                         </div>
                         <div class="content-card_right-footer">
                             <div class="ccrf_left">
-                                <div class="user-avatar"></div>
-                                <div class="user-name"></div>
-                                <div class="release-time"></div>
+                                <div class="user-avatar">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="user-name">
+                                    <span>少数派</span>
+                                </div>
+                                <div class="release-time">
+                                    <span>5小时前</span>
+                                </div>
                             </div>
-                            <div class="ccrf_right"><div class="electric"></div><div class="comment"></div></div>
+                            <div class="ccrf_right">
+                                <div class="electric">
+                                    <span class="icon iconfont"></span>
+                                    <span class="text">16</span>
+                                </div>
+                                <div class="comment">
+                                    <span class="icon iconfont"></span>
+                                    <span class="text">20</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </a>
@@ -167,15 +243,31 @@
                     <div class="content-card_left"><img src="" alt=""></div>
                     <div class="content-card_right">
                         <div class="content-card_right-main">
-                            <h2 class="title"></h2><p></p>
+                            <h2 class="title">一次编程马拉松的经历，让我的 Airtable 账户上多了五千美金</h2>
+                            <p>一次编程马拉松的经历，让我的 Airtable 账户上多了五千美金</p>
                         </div>
                         <div class="content-card_right-footer">
                             <div class="ccrf_left">
-                                <div class="user-avatar"></div>
-                                <div class="user-name"></div>
-                                <div class="release-time"></div>
+                                <div class="user-avatar">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="user-name">
+                                    <span>少数派</span>
+                                </div>
+                                <div class="release-time">
+                                    <span>5小时前</span>
+                                </div>
                             </div>
-                            <div class="ccrf_right"><div class="electric"></div><div class="comment"></div></div>
+                            <div class="ccrf_right">
+                                <div class="electric">
+                                    <span class="icon iconfont"></span>
+                                    <span class="text">16</span>
+                                </div>
+                                <div class="comment">
+                                    <span class="icon iconfont"></span>
+                                    <span class="text">20</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </a>
@@ -185,15 +277,31 @@
                     <div class="content-card_left"><img src="" alt=""></div>
                     <div class="content-card_right">
                         <div class="content-card_right-main">
-                            <h2 class="title"></h2><p></p>
+                            <h2 class="title">一次编程马拉松的经历，让我的 Airtable 账户上多了五千美金</h2>
+                            <p>一次编程马拉松的经历，让我的 Airtable 账户上多了五千美金</p>
                         </div>
                         <div class="content-card_right-footer">
                             <div class="ccrf_left">
-                                <div class="user-avatar"></div>
-                                <div class="user-name"></div>
-                                <div class="release-time"></div>
+                                <div class="user-avatar">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="user-name">
+                                    <span>少数派</span>
+                                </div>
+                                <div class="release-time">
+                                    <span>5小时前</span>
+                                </div>
                             </div>
-                            <div class="ccrf_right"><div class="electric"></div><div class="comment"></div></div>
+                            <div class="ccrf_right">
+                                <div class="electric">
+                                    <span class="icon iconfont"></span>
+                                    <span class="text">16</span>
+                                </div>
+                                <div class="comment">
+                                    <span class="icon iconfont"></span>
+                                    <span class="text">20</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </a>
@@ -203,15 +311,31 @@
                     <div class="content-card_left"><img src="" alt=""></div>
                     <div class="content-card_right">
                         <div class="content-card_right-main">
-                            <h2 class="title"></h2><p></p>
+                            <h2 class="title">一次编程马拉松的经历，让我的 Airtable 账户上多了五千美金</h2>
+                            <p>一次编程马拉松的经历，让我的 Airtable 账户上多了五千美金</p>
                         </div>
                         <div class="content-card_right-footer">
                             <div class="ccrf_left">
-                                <div class="user-avatar"></div>
-                                <div class="user-name"></div>
-                                <div class="release-time"></div>
+                                <div class="user-avatar">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="user-name">
+                                    <span>少数派</span>
+                                </div>
+                                <div class="release-time">
+                                    <span>5小时前</span>
+                                </div>
                             </div>
-                            <div class="ccrf_right"><div class="electric"></div><div class="comment"></div></div>
+                            <div class="ccrf_right">
+                                <div class="electric">
+                                    <span class="icon iconfont"></span>
+                                    <span class="text">16</span>
+                                </div>
+                                <div class="comment">
+                                    <span class="icon iconfont"></span>
+                                    <span class="text">20</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </a>
@@ -221,87 +345,31 @@
                     <div class="content-card_left"><img src="" alt=""></div>
                     <div class="content-card_right">
                         <div class="content-card_right-main">
-                            <h2 class="title"></h2><p></p>
+                            <h2 class="title">一次编程马拉松的经历，让我的 Airtable 账户上多了五千美金</h2>
+                            <p>一次编程马拉松的经历，让我的 Airtable 账户上多了五千美金</p>
                         </div>
                         <div class="content-card_right-footer">
                             <div class="ccrf_left">
-                                <div class="user-avatar"></div>
-                                <div class="user-name"></div>
-                                <div class="release-time"></div>
+                                <div class="user-avatar">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="user-name">
+                                    <span>少数派</span>
+                                </div>
+                                <div class="release-time">
+                                    <span>5小时前</span>
+                                </div>
                             </div>
-                            <div class="ccrf_right"><div class="electric"></div><div class="comment"></div></div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="content-card_item">
-                <a href="#">
-                    <div class="content-card_left"><img src="" alt=""></div>
-                    <div class="content-card_right">
-                        <div class="content-card_right-main">
-                            <h2 class="title"></h2><p></p>
-                        </div>
-                        <div class="content-card_right-footer">
-                            <div class="ccrf_left">
-                                <div class="user-avatar"></div>
-                                <div class="user-name"></div>
-                                <div class="release-time"></div>
+                            <div class="ccrf_right">
+                                <div class="electric">
+                                    <span class="icon iconfont"></span>
+                                    <span class="text">16</span>
+                                </div>
+                                <div class="comment">
+                                    <span class="icon iconfont"></span>
+                                    <span class="text">20</span>
+                                </div>
                             </div>
-                            <div class="ccrf_right"><div class="electric"></div><div class="comment"></div></div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="content-card_item">
-                <a href="#">
-                    <div class="content-card_left"><img src="" alt=""></div>
-                    <div class="content-card_right">
-                        <div class="content-card_right-main">
-                            <h2 class="title"></h2><p></p>
-                        </div>
-                        <div class="content-card_right-footer">
-                            <div class="ccrf_left">
-                                <div class="user-avatar"></div>
-                                <div class="user-name"></div>
-                                <div class="release-time"></div>
-                            </div>
-                            <div class="ccrf_right"><div class="electric"></div><div class="comment"></div></div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="content-card_item">
-                <a href="#">
-                    <div class="content-card_left"><img src="" alt=""></div>
-                    <div class="content-card_right">
-                        <div class="content-card_right-main">
-                            <h2 class="title"></h2><p></p>
-                        </div>
-                        <div class="content-card_right-footer">
-                            <div class="ccrf_left">
-                                <div class="user-avatar"></div>
-                                <div class="user-name"></div>
-                                <div class="release-time"></div>
-                            </div>
-                            <div class="ccrf_right"><div class="electric"></div><div class="comment"></div></div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="content-card_item">
-                <a href="#">
-                    <div class="content-card_left"><img src="" alt=""></div>
-                    <div class="content-card_right">
-                        <div class="content-card_right-main">
-                            <h2 class="title"></h2><p></p>
-                        </div>
-                        <div class="content-card_right-footer">
-                            <div class="ccrf_left">
-                                <div class="user-avatar"></div>
-                                <div class="user-name"></div>
-                                <div class="release-time"></div>
-                            </div>
-                            <div class="ccrf_right"><div class="electric"></div><div class="comment"></div></div>
                         </div>
                     </div>
                 </a>
@@ -309,19 +377,174 @@
         </div>
         <aside class="main_right">
             <div class="right_top">
-
+                <a href="">
+                    <img src="./img/main_right/right_top_img.png" alt="">
+                </a>
             </div>
             <div class="right_middle">
-
+                <ul>
+                    <li>
+                        <a href="">
+                            <div class="item_sign-title">
+                                <img src="./img/main_right/Matrix-dark.png" alt="">
+                                <span class="sign-text">Matrix <span class="small">精选</span></span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="item_sign-content">
+                            <div class="item_sign_left">
+                                <div class="user-avatar">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                            <div class="item_sign_right">
+                                <span class="user-name">少数派</span>
+                                <a href="">资金量少，该如何开始投资？｜ 问答</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item_sign-content">
+                            <div class="item_sign_left">
+                                <div class="user-avatar">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                            <div class="item_sign_right">
+                                <span class="user-name">少数派</span>
+                                <a href="">资金量少，该如何开始投资？｜ 问答</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item_sign-content">
+                            <div class="item_sign_left">
+                                <div class="user-avatar">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                            <div class="item_sign_right">
+                                <span class="user-name">少数派</span>
+                                <a href="">资金量少，该如何开始投资？｜ 问答</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item_sign-content">
+                            <div class="item_sign_left">
+                                <div class="user-avatar">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                            <div class="item_sign_right">
+                                <span class="user-name">少数派</span>
+                                <a href="">资金量少，该如何开始投资？｜ 问答</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item_sign-last">
+                            <a href="">查看全部 ></a>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <div class="right_bottom">
-
+                <div class="right_bottom_icon">
+                    <div class="icon-item">
+                        <a href="#"><img src="./img/main_right/sina.73e4d813.svg" alt=""></a>
+                    </div>
+                    <div class="icon-item">
+                        <a href="#"><img src="./img/main_right/weixin.e7fb690d.svg" alt=""></a>
+                    </div>
+                    <div class="icon-item">
+                        <a href="#"><img src="./img/main_right/twitter.82ab7a95.svg" alt=""></a>
+                    </div>
+                    <div class="icon-item">
+                        <a href="#"><img src="./img/main_right/rss.b38f3423.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="right_bottom_link">
+                    <ul>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">成为作者</a></li>
+                        <li><a href="#">用户协议</a></li>
+                        <li><a href="#">商务合作</a></li>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">-客户端-</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="right_bottom_ssp-text">
+                    <span>© 2013-2020 少数派</span>
+                    <a href="#">粤ICP备09128966号-4</a>
+                    <span>CC BY-NC 4.0</span>
+                </div>
             </div>
         </aside>
     </div>
     <div class="right_fixed-box">
-        <div class="fixed-box_reg-login"></div>
+        <div id="fixd-box_reg-login-open" class="fixed-box_reg-login"></div>
         <div class="fixed-box_go-top"></div>
+    </div>
+    <div id="dialog" class="dialog">
+        <div class="dialog_reg-login">
+            <div class="reg-login_header">
+                <div id="reg-login-close" class="reg-login_close iconfont"></div>
+            </div>
+            <div class="reg-login_body">
+                <div class="reg-login_title">
+                    <a href="">
+                        <img src="./img/reg-login/login_logo.510a9d9e.png" alt="">
+                    </a>
+                </div>
+                <div class="reg-login_form">
+                    <div class="reg-login_form-item reg-login_mobile-phone">
+                        <div class="select rlmp_countryCode">
+                            <span>+ 86 <i class="triangle-icon"></i></span>
+                        </div>
+                        <div class="rlmp_number">
+                            <input type="text" class="rlmp_number-input" placeholder="手机号码" />
+                        </div>
+                    </div>
+                    <div class="reg-login_form-item reg-login_password">
+                        <input type="password" class="rlp_password-input" placeholder="密码" />
+                        <div class="rlp_rem-password">
+                            <input type="checkbox" />   
+                            <span>忘记密码</span>
+                        </div>
+                    </div>
+                    <div class="reg-login_form-item reg-login_button">
+                        <div class="forget-password">
+                            <a href="#">忘记密码？</a>
+                        </div>
+                        <div class="reg-login_button-item">
+                            <button class="reg_button">
+                                <span>注册</span>
+                            </button>
+                            <button class="login_button">
+                                <span>登录</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reg-login_footer">
+                <span>其他方式登录</span>
+                <div class="reg-login_other">
+                    <div class="reg-login_other-item">
+                        <i class="icon iconfont reg-login_email"></i>
+                    </div>
+                    <div class="reg-login_other-item">
+                        <i class="icon iconfont reg-login_weixin"></i>
+                    </div>
+                    <div class="reg-login_other-item">
+                        <i class="icon iconfont reg-login_weibo"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
