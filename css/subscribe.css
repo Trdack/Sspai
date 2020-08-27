@@ -1,0 +1,320 @@
+.subscribe-page {
+    padding: 20px 0;
+    width: 100%;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+.subscribe-header {
+    margin: 0 auto;
+    width: 1120px;
+    height: 325px;
+}
+
+.subscribe-header_left,
+.subscribe-header_right {
+    margin: 0 auto;
+    height: 325px;
+    background: #fff;
+    float: left;
+}
+
+.subscribe-header_left  {
+    position: relative;
+    width: 780px;
+}
+
+.shl_box,
+.shl_box_item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 780px;
+    height: 325px;
+}
+
+.shl_box_item a img {
+    width: 100%;
+    height: 100%;
+}
+
+.shl_box-choice {
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-50%);
+}
+
+.subscribe-header_right {
+    margin-left: 20px;
+    padding: 0 20px;
+    width: 320px;
+}
+
+
+.shr_title,.shr_middle,.shr_bottom {
+    width: 100%;
+    overflow: hidden;
+}
+
+.shr_title {
+    height: 30px;
+    line-height: 30px;
+}
+
+.shr_middle {
+    margin: 0 auto;
+    height: 250px;
+}
+
+.shr_middle h2 {
+    font-size: .2rem;
+    font-weight: 500;
+}
+
+.shr_bottom {
+    height: 25px;
+    font-size: .13rem;
+}
+
+.shr_bottom a:hover {
+    color: #ff6000;
+}
+
+.subscribe-main {
+    position: relative;
+    margin: 20px auto;
+    width: 1120px;
+    overflow: hidden;
+}
+
+.subscribe-main_nav {
+    position: relative;
+    margin: 0 auto;
+}
+
+.subscribe-main_nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    height: 30px;
+    line-height: 30px;
+    font-size: .17rem;
+}
+
+.subscribe-main_nav-search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 30px;
+}
+
+.subscribe-main_nav-search input {
+    outline: none;
+    border-bottom: 1px solid #999;
+    width: 150px;
+    height: 30px;
+    background: transparent;
+
+}
+
+.subscribe_classification {
+    width: 100%;
+    overflow: hidden;
+}
+
+.subscribe-container {
+    margin: 20px auto;
+    padding: 1px 20px;
+    width: 100%;
+    height: 460px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.subscribe-container_topbar {
+    margin: 0 auto;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: .2rem;
+}
+
+.subscribe-card-box {
+    margin: 10px auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.subscribe-card {
+    position: relative;
+    margin: 0 19px 20px 0;
+    width: 197px;
+    height: 350px;
+    float: left;
+}
+
+.subscribe-card_img,
+.subscribe-card_img img,
+.subscribe-card_information {
+    width: 197px;
+    height: 262px;
+    border-radius: 10px;
+}
+
+.subscribe-card_img:hover .subscribe-card_information {
+    display: block;
+    transition: opacity .5s ease;
+}
+
+.subscribe-card_information {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    padding: 10px;
+    background: linear-gradient(0deg,rgba(0,0,0,.9),rgba(0,0,0,.9));
+    color: #fff;
+    transition: opacity .5s ease;
+}
+
+.sci_content {
+    width: 100%;
+    height: 180px;
+}
+
+.sci_content h3 {
+    font-size: .15rem;
+    font-weight: bold;
+}
+
+.sci_content p {
+    font-size: .13rem;
+}
+
+.sci_bottom {
+    width: 197px;
+    height: 82px;
+}
+
+.sci_money-btn,.sci_free-read {
+    width: 95px;
+    height: 36px;
+    line-height: 36px;
+    float: left;
+}
+
+.sci_money-btn {
+    font-size: .2rem;
+}
+
+.sci_money-btn .label {
+    display: block;
+    margin: 6px auto 0;
+    width: 10px;
+    height: 30px;
+    font-size: .12rem;
+    float: left;
+}
+
+.sci_free-read {
+    line-height: 48px;
+    font-size: .12rem;
+}
+
+.current_price,
+.origin_price {
+    width: 80px;
+    height: 50px;
+    float: left;
+}
+
+
+.current_price {
+    line-height: 50px;
+    font-size: .24rem;
+    font-weight: 700;
+}
+
+.current_price a .label {
+    display: block;
+    margin: 9px auto 0;
+    width: 12px;
+    height: 30px;
+    font-size: .14rem;
+    color: #ff0600;
+    float: left;
+}
+
+.current_price a span {
+    color: #ff0600;
+}
+
+.origin_price {
+    padding: 20px 0;
+}
+
+.origin_price a i {
+    display: block;
+    margin: 5px auto 0;
+    width: 12px;
+    height: 30px;
+    font-size: .14rem;
+    float: left;
+}
+
+.origin_price a i,
+.origin_price a span {
+    text-decoration-line: line-through;
+    color: #666;
+}
+
+.subscribe_try-read {
+    padding: 0 20px;
+    width: 1120px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.try-read_card {
+    margin: 0 19px 20px 0;
+    width: 197px;
+    height: 172px;
+    float: left;
+}
+
+.try-read_card:nth-child(5n) {
+    margin: 0 auto;
+}
+
+.try-read_card_img {
+    width: 100%;
+    height: 98px;
+}
+
+.try-read_card_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.try-read_card_information {
+    margin: 5px auto 0;
+    width: 100%;
+    height: 60px;
+}
+
+.information-name {
+    margin: 5px auto;
+    width: 100%;
+    font-size: .12rem;
+}
+
+.information-name a{
+    color: #999;
+    font-weight: lighter;
+}
+
+.information-description {
+    width: 100%;
+    font-size: .14rem;
+}
