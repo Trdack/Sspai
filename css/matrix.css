@@ -1,0 +1,254 @@
+.matrix_top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    background: #f5f5f5;
+    z-index: 9;
+}
+
+.matrix_topbar {
+    width: 100%;
+    height: 60px;
+}
+
+.matrix_topbar-center {
+    margin: 0 auto;
+    width: 1140px;
+    height: 60px;
+}
+
+.matrix_topbar-logo {
+    width: 120px;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+}
+
+.ss-logo {
+    margin: 0 10px 0 0;
+    height: 60px;
+    line-height: 60px;
+    float: left;
+}
+
+.ss-logo-circle {
+    fill: #da282a;
+}
+
+.ss-logo-pai {
+    fill: #fff;
+}
+
+.ss-logo-text {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    font-size: .14rem;
+    color: #666;
+}
+
+.matrix_topbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 60px;
+    float: left;
+}
+
+.matrix_topbar-nav-item {
+    display: inline-block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.matrix_topbar-nav-item i {
+    font-size: .26rem;
+}
+
+
+.matrix_topbar-right {
+    width: 120px;
+    height: 60px;
+    float:left;
+}
+
+.matrix_topbar-right .top_right_search {
+    color: #333;
+}
+
+.matrix_topbar-right .top_right_search i {
+    font-size: .32rem;
+}
+
+/* --- *//* --- *//* --- *//* --- *//* --- */
+/* matrix_page 主体 */
+.matrix_page {
+    margin: 60px auto 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.matrix_title {
+    margin: 0 auto;
+    width: 100%;
+    height: 145px;
+    background: #f5f5f5;
+}
+
+.matrix_title-content {
+    position: relative;
+    margin: 0 auto 3px;
+    padding: 20px 0;
+    width: 1140px;
+}
+
+.matrix_title-a {
+    position: absolute;
+    top: 29px;
+    right: 29px;
+    display: inline-block;
+    padding: 0 20px;
+    height: 42px;
+    background: #408cff;
+    border-radius: 21px;
+    line-height: 42px;
+    color: #fff;
+}
+
+.matrix_title-a i {
+    font-size: .2rem;
+    color: #fff;
+}
+
+.matrix_title-a span {
+    font-size: .14rem;
+    color: #fff;
+}
+
+.matrix_nav {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    width: 1140px;
+    height: 38px;
+}
+
+.matrix_nav-item {
+    display: inline-flex;
+    border-bottom: 1.5px solid #000;
+    height: 38px;
+    line-height: 38px;
+}
+
+.matrix_nav-item span {
+    white-space: nowrap;
+}
+
+.matrix_main {
+    margin: 0 auto;
+    width: 1140px;
+    overflow: hidden;
+}
+
+.matrix_main-square {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 752px;
+    background: #fff;
+    float: left;
+}
+
+.matrix_main-square-tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border-bottom: 1px solid #e5e5e5;
+    margin: 20px auto 0; 
+    width: 704px;
+    height: 60px;
+}
+
+.mmst_sort {
+    display: flex;
+    width: 100px;
+    height: 60px;
+}
+
+.mmst_sort-item {
+    display: inline-flex;
+    height: 60px;
+    line-height: 60px;
+}
+
+.mmst_sort-item i {
+    color: #ff9900;
+    font-size: .26rem;
+}
+
+.mmst_sort-item span {
+    color: #888;
+    font-size: .19rem;
+    font-weight: 700;
+}
+
+.mmst_layout {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    background: #eee;
+    text-align: center;
+}
+
+.mmst_layout i {
+    display: inline-block;
+    padding: 6px;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    font-size: .24rem;
+    color: #8e8787;
+    cursor: pointer;
+}
+
+.mmst_layout i:hover {
+    color: #292525;
+}
+
+.mmst_layout:hover .mmst_layout-type_list {
+    display: flex;
+}
+
+.mmst_layout-type_list {
+    position: absolute;
+    top: 36px;
+    right: -20px;
+    display: none;
+    flex-direction: row;
+    padding: 6px 20px;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 3px 16px rgba(0,0,0,.12);
+
+}
+
+.matrix_main-right {
+    margin: 0 0 0 16px;
+    width: 372px;
+    height: 900px;
+    background: #408cff;
+    overflow: hidden;
+    float: left;
+}
+
